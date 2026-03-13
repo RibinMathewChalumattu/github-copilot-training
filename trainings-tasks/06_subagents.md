@@ -15,7 +15,6 @@ This exercise requires:
 - **VS Code 1.109 or newer**
 - Current GitHub Copilot and GitHub Copilot Chat extensions
 - **`chat.customAgentInSubagent.enabled`** enabled
-- **`runSubagent`** enabled in Copilot Chat tools
 
 ---
 
