@@ -24,14 +24,15 @@ This project is designed for **GitHub Copilot training purposes**. It is based o
 
 ## 🎯 Training Purpose
 
-This project is part of the **GitHub Copilot Training Program**. It includes six modules that guide developers through various aspects of using Copilot effectively:
+This project is part of the **GitHub Copilot Training Program**. It includes seven modules that guide developers through various aspects of using Copilot effectively:
 
 1. **Module I — Context & Control**: Precise Prompting and Workspace Awareness
 2. **Module II — Dynamic Interaction Modes**: Completions, Inline Chat, Chat Panel, Terminal
 3. **Module III — Version Control & Quality**: Git Workflow Integration
 4. **Module IV — Testing Framework**: Automating Tests and Policy Checks
 5. **Module V — Agentic Workflows**: Delegating and Supervising Autonomous Agents
-6. **Module VI — Vibe Coding**: The Integrated Exploration Challenge
+6. **Module VI — Subagents**: Coordinating Specialized Agents in the IDE
+7. **Module VII — Vibe Coding**: The Integrated Exploration Challenge
 
 Each module includes hands-on exercises to help you master specific Copilot features and workflows.
 
