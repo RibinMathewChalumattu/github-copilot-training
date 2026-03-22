@@ -13,7 +13,7 @@ MOCK_TASKS: Dict[int, DeveloperTask] = {
 }
 
 # Simulate asynchronous I/O with a slight delay
-async def fetch_all_tasks():
+async def fetch_all_tasks() -> list[DeveloperTask]:
     """Simulates fetching all tasks asynchronously."""
     await asyncio.sleep(0.01)
     return list(MOCK_TASKS.values())
@@ -54,7 +54,7 @@ async def generate_productivity_report() -> ProductivityReport:
 app = FastAPI(title="Productivity Reporting System")
 
 @app.get("/status")
-async def get_status() -> Dict:
+async def get_status() -> Dict[str, str]:
     return {"status": "ok"}
 
 
@@ -83,7 +83,7 @@ async def log_task(task: DeveloperTask) -> TaskLogResponse:
 
 # Add a new GET route /task/1/status that accepts a task_id path parameter and returns the status of that task
 @app.get("/task/{task_id}/status")
-async def get_task_status(task_id: int):
+async def get_task_status(task_id: int) -> Dict[str, str]:
     """Returns the status of a specific task by ID."""
     task = MOCK_TASKS.get(task_id)
     if not task:
